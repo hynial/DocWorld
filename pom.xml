@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>DocWorld</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<!--        <poi.version>3.17</poi.version>-->
+        <poi.version>4.1.1</poi.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>ooxml-schemas</artifactId>
+            <version>1.1</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+        <!--<dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>${poi.version}</version>
+        </dependency>-->
+
+        <!--<dependency>
+            <groupId>com.artofsolving</groupId>
+            <artifactId>jodconverter</artifactId>
+            <version>2.2.1</version>
+        </dependency>-->
+
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.poi.xwpf.converter.pdf-gae &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>fr.opensagres.xdocreport</groupId>-->
+<!--            <artifactId>fr.opensagres.poi.xwpf.converter.pdf-gae</artifactId>-->
+<!--            <version>2.0.1</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>e-iceblue</groupId>-->
+<!--            <artifactId>spire.doc.free</artifactId>-->
+<!--            <version>5.2.0</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.aspose.words/aspose-words -->
+<!--        <dependency>-->
+<!--            <groupId>com.aspose.words</groupId>-->
+<!--            <artifactId>aspose-words</artifactId>-->
+<!--            <version>18.10</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>spire</groupId>
+            <artifactId>spire</artifactId>
+            <version>5.2.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/spire.doc.free-5.2.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>aspose16</groupId>
+            <artifactId>aspose16</artifactId>
+            <version>16.4</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/aspose16.4jdk16.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+<!--        <repository>-->
+<!--            <id>AsposeJavaAPI</id>-->
+<!--            <name>Aspose Java API</name>-->
+<!--            <url>https://releases.aspose.com/java/repo/</url>-->
+<!--        </repository>-->
+        <repository>
+            <id>aspose-maven-repository</id>
+            <url>http://artifact.aspose.com/repo/</url>
+        </repository>
+    </repositories>
+</project>
